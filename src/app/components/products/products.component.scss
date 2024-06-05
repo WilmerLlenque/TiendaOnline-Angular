@@ -1,0 +1,32 @@
+.galeria{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+@media screen and (min-width:27em) and (max-width:39.9em){
+  .galeria{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+  }
+}
+@media screen and (min-width:40em) and (max-width:63.9em){
+  .galeria{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+  }
+}
+
+@media screen and (min-width:63.9em){
+  .galeria{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+  }
+}
+

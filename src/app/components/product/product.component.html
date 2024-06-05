@@ -1,0 +1,14 @@
+<div class="container-img">
+  <div>
+    <app-imagen [srcImg]="product.image"></app-imagen>
+  </div>
+  <div class="info-product">
+    <div>
+      <p>{{product.title}}</p>
+      <p>{{product.price |currency: 'PEN'}}</p>
+    </div>
+    <div>
+      <button (click)="addProduct()">Add Card</button>
+    </div>
+  </div>
+</div>

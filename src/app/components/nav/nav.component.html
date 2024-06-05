@@ -1,0 +1,44 @@
+<section class="show-mobile">
+  <div>
+    <div class="header-container">
+      <button (click)="activarMenu()"><img src="./assets/svg/icon_menu.svg" alt=""></button>
+    </div>
+    <div>
+      <img src="./assets/svg/logo_yard_sale.svg" alt="">
+    </div>
+    <div>
+      <a><img src="./assets/svg/icon_shopping_cart_notification.svg" alt=""><span>{{counter}}</span></a>
+    </div>
+  </div>
+  <div class="side-menu" [class.active]="activado">
+    <button (click)="activarMenu()">Cerrar</button>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contactos</a></li>
+    </ul>
+  </div>
+</section>
+<section class="hide-mobile">
+  <div>
+    <div>
+      <nav>
+        <div class="logo">
+          <img src="./assets/svg/logo_yard_sale.svg" alt="">
+        </div>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="info">
+      <p class="account">jllenquec@gmail.com</p>
+      <a href="#">
+        <img src="./assets/svg/icon_shopping_cart_notification.svg" alt="">
+        <span>{{counter}}</span>
+      </a>
+    </div>
+  </div>
+</section>

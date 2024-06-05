@@ -1,0 +1,4 @@
+<img *ngIf="srcImg;else imgDefault" [src]="srcImg" alt="">
+<ng-template #imgDefault>
+  <img [src]="srcDefaul" alt="">
+</ng-template>

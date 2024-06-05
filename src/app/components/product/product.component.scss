@@ -1,0 +1,19 @@
+
+.container-img {
+  display: flex;
+  flex-direction: column;
+  >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &.info-product{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 12px;
+    }
+    button{
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/* Puede agregar estilos globales a este archivo y también importar otros archivos de estilo.*/
+@import url(./style/reset.scss);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+.galeria{
+  app-product{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+
